@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Amsterdam';
+    src: url('~@/assets/fonts/GreatVibesRegular.woff') format('woff'),
+         url('~@/assets/fonts/GreatVibesRegular.woff2') format('woff2');
+         /* url('~@/assets/fonts/your-font.woff2') format('woff2'); */
+
+    /* Add more formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+  @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#app {
+  font-family: 'Roboto', sans-serif;
+}

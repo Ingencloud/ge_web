@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkgewedding"]=self["webpackChunkgewedding"]||[]).push([[443],{833:function(n,e,u){u.r(e),u.d(e,{default:function(){return f}});var t=u(3396);const a={class:"about"},r=(0,t._)("h1",null,"This is an about page",-1),s=[r];function i(n,e){return(0,t.wg)(),(0,t.iD)("div",a,s)}var c=u(89);const d={},o=(0,c.Z)(d,[["render",i]]);var f=o}}]);
+//# sourceMappingURL=about.bf0fffea.js.map

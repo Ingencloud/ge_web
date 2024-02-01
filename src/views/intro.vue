@@ -56,9 +56,7 @@
     <div >
       <div class="absolute inset-0 " >          
         <video
-        controls
         autoplay
-        muted
         loop
         class="w-full h-full  object-cover shadow-xl ring-1 ring-gray-400/10"
       >
@@ -130,7 +128,6 @@ Gilbert & Edinam                </h2>
       <!-- Mobile View: Form overlay on the image -->
       <div class="absolute inset-0" >          
         <video
-        controls
         autoplay
         muted
         loop

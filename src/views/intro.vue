@@ -58,6 +58,7 @@
         <video
         autoplay
         loop
+        playsinline
         class="w-full h-full  object-cover shadow-xl ring-1 ring-gray-400/10"
       >
         <!-- Use your video source URL here -->
@@ -129,8 +130,8 @@ Gilbert & Edinam                </h2>
       <div class="absolute inset-0" >          
         <video
         autoplay
-        muted
         loop
+        playsinline
         class="w-full h-full object-cover shadow-xl ring-1 ring-gray-400/10"
       >
         <!-- Use your video source URL here -->

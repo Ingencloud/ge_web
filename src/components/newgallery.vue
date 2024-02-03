@@ -6,22 +6,25 @@
   <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
 </svg>
 Gallery</h2>
-
-    <Carousel :itemsToShow="4" :wrapAround="true" :transition="500">
+<Carousel :itemsToShow="4" :wrapAround="true" :transition="500">
       <Slide v-for="image in images" :key="image.id" class="mx-2 h-540px lg:h-740px">
-        <img :src="image.url"  class="carousel__item ">
+        <img :src="image.url" class="carousel__item" @click="openModal(image)">
       </Slide>
     </Carousel>
+
+    <div v-if="modalOpen" @click="closeModal" class="modal fixed inset-0 z-10 w-screen overflow-y-auto">
+      <img :src="selectedImage.url" class="modal-image" @click.stop />
+    </div>
 </div>
     </section>
   </template>
   
   <script>
-  import { defineComponent } from 'vue';
+  // import { defineComponent } from 'vue';
   import { Carousel, Slide } from 'vue3-carousel';
   import 'vue3-carousel/dist/carousel.css';
   
-  export default defineComponent({
+  export default {
     // eslint-disable-next-line vue/multi-word-component-names
     name: 'Newgallery',
     components: {
@@ -44,9 +47,20 @@ Gallery</h2>
           { id: 11, url: '../assets/8.jpg' },
           // Add more image objects with unique IDs and URLs
         ],
+        modalOpen: false,
+      selectedImage: null,
       };
     },
-  });
+    methods: {
+    openModal(image) {
+      this.selectedImage = image;
+      this.modalOpen = true;
+    },
+    closeModal() {
+      this.modalOpen = false;
+    },
+  },
+};
   </script>
   
   <style scoped>
@@ -75,6 +89,21 @@ Gallery</h2>
     opacity: 1;
     transform: rotateY(0) scale(1.1);
   }
+
+  .modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+  .modal-image {
+  max-width: 100%;
+  max-height: 100%;
+}
 
   @media screen {
     

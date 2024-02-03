@@ -51,15 +51,19 @@
             </div>
 </div>
     </div> -->
+    <preloader :loading="showPreloader" />
 
 
     <div >
       <div class="absolute inset-0 " >          
         <video
+        ref="videoPlayer"
         autoplay
         loop
         playsinline
         class="w-full h-full  object-cover shadow-xl ring-1 ring-gray-400/10"
+        @loadeddata="videoLoaded"
+
       >
         <!-- Use your video source URL here -->
         <source src="../assets/vid.mp4" type="video/mp4" />
@@ -70,7 +74,7 @@
           <img class="mb-2 lg:mb-10" src="../assets/logo.png" alt="" />
         </div>
         <div v-if="showText" class="w-full p-8 animate-fade-in-up">
-          <h2 class="text-2xl lg:text-4xl mb-2 lg:mb-10 text-white font-bold"  style="font-style: italic; font-family: sans-serif;">We are becoming..... TheTackies!!</h2>
+          <h2 class="text-2xl lg:text-4xl mb-2 lg:mb-10 text-white font-bold"  style="font-style: italic; font-family: sans-serif;">We are becoming..... the Tackies!</h2>
           <p class="mb-2 md:mb-6 text-white font-bold">And over all these virtues put on love, which binds them all together in perfect unity</p> <br> <p class="mb-2 md:mb-6 text-white">Colossians 3:14 </p>
           
         </div>
@@ -79,7 +83,7 @@
       <div class="modal-content">
         <div class="w-auto xl:max-w-xl p-6 space-y-8 md:p-8 rounded-lg shadow-xl " style="background-color: rgba(17, 24, 39, 0.5);">
                 <h2 class="text-2xl font-bold text-gray-900 opacity-100 dark:text-white opac">
-                   Becoming..... TheTackies
+                   #BecomingtheTackies!
                 </h2>        <h2 class="text-xl md:mb-6 text-white" >Wednesday 1st May,2024</h2>
 
               <Countdown />        <p class="mb-4">Kindly Let us know if you will be in attendance</p>
@@ -129,10 +133,12 @@ Gilbert & Edinam                </h2>
       <!-- Mobile View: Form overlay on the image -->
       <div class="absolute inset-0" >          
         <video
+        ref="videoPlayer"
         autoplay
         loop
         playsinline
         class="w-full h-full object-cover shadow-xl ring-1 ring-gray-400/10"
+        @loadeddata="videoLoaded"
       >
         <!-- Use your video source URL here -->
         <source src="../assets/ge.mp4" type="video/mp4" />
@@ -153,7 +159,7 @@ Gilbert & Edinam                </h2>
       <div class="modal-content">
         <div class="w-auto xl:max-w-xl p-6 space-y-8 md:p-8 rounded-lg shadow-xl " style="background-color: rgba(17, 24, 39, 0.5);">
                 <h2 class="text-2xl font-bold text-gray-900 opacity-100 dark:text-white opac">
-                   Becoming..... TheTackies
+                  #BecomingtheTackies!
                 </h2>        <h2 class="text-xl md:mb-6 text-white" >Wednesday 1st May,2024</h2>
 
               <Countdown />        <p class="mb-4">Kindly Let us know if you will be in attendance</p>
@@ -188,17 +194,19 @@ Gilbert & Edinam                </h2>
 import { ref, onMounted } from 'vue';
 import { formatDuration, intervalToDuration } from 'date-fns';
 import Countdown from '../components/countdown.vue';
+import Preloader from '@/components/preloader.vue';
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: 'Intro',
   components: {
-    Countdown
+    Countdown,
+    Preloader
   },
 
   data(){
     return {
-      showModal1: false
+      showModal1: false,
     }
   },
   setup() {
@@ -208,6 +216,7 @@ export default {
     const weddingDate = new Date('2024-05-01');
     const countdownMessage = ref('');
     const showModal1 = ref(false);
+    const showPreloader = ref(true);
 
 
     onMounted(() => {
@@ -228,6 +237,10 @@ export default {
         showLogo.value = true;
       }, 5000); // 8000 milliseconds = 5 seconds
 
+      setTimeout(() => {
+      showPreloader.value = false;
+  }, 20000); // 20000 milliseconds = 20 seconds
+
       setInterval(() => {
         const now = new Date();
         const duration = intervalToDuration({ start: now, end: weddingDate, unit: 'seconds' });
@@ -246,6 +259,7 @@ export default {
       showLogo,
       countdownMessage,
       closeModal,
+      showPreloader
     };
   },
   methods: {
@@ -256,6 +270,10 @@ export default {
     noEvent() {
       this.showModal1 = true;
       this.showModal = false;
+    },
+
+    videoLoaded() {
+      this.showPreloader = false
     }
   },
   // methods: {

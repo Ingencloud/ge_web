@@ -1,6 +1,6 @@
 <template>
     <div v-if="loading" class="preloader">
-      <img src="@/assets/logo1.png" alt="Logo" class="mb-2 lg:mb-10" />
+      <img src="@/assets/logo.png" alt="Logo" class="mb-2 lg:mb-10" />
       <p class="text-black font-bold">Loading...</p>
     </div>
   </template>
@@ -12,6 +12,7 @@
     props: {
       loading: Boolean,
     },
+    
   };
   </script>
   

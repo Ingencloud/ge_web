@@ -1,6 +1,32 @@
 <template>
-  <router-view :key="$route.fullPath"/>
+<div v-if="loading">
+  <preloader />
+  </div>
+  <div v-else>
+    <router-view :key="$route.fullPath"></router-view>
+  </div>
+  <!-- <router-view :key="$route.fullPath"/> -->
 </template>
+
+<script>
+import Preloader from '@/components/preloader.vue';
+
+export default {
+  name: 'App',
+  components: {Preloader} ,
+  data () {
+    return {
+      loading: true,
+    }
+  },
+  
+  mounted() {
+    setTimeout(() => {
+      this.loading = false
+    }, 3000);
+  }
+}
+</script>
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");

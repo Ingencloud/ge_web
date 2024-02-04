@@ -35,7 +35,7 @@
         <div>
           <button type="submit" class="flex w-full justify-center rounded-md bg-purple-800 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600">Register</button>
         </div>
-        <div v-if="showError" class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+        <div v-if="showError" class="p-4 mb-4 my-2 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-red-800 dark:text-white" role="alert">
           <svg class="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
     <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
   </svg>
@@ -46,8 +46,9 @@
       <p class="mt-10 text-center text-sm text-gray-500">
         Already registered?
         {{ ' ' }}
-        <a href="#" class="font-semibold leading-6 text-purple-800 hover:text-purple-500">Log In</a>
-      </p>
+        <router-link to="/login">
+        <p class="font-semibold leading-6 text-purple-800 hover:text-purple-500">Log In</p>
+        </router-link>      </p>
     </div>
   </div>
           </div>
@@ -88,7 +89,7 @@
         <div>
           <button type="submit" class="flex w-full justify-center rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-white bg-purple-900 shadow-sm hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600">Register</button>
         </div>
-        <div v-if="showError" class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+        <div v-if="showError" class="p-4 mb-4 my-2 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-red-800 dark:text-white" role="alert">
           <svg class="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
     <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
   </svg>
@@ -99,7 +100,9 @@
       <p class="mt-10 text-center text-sm text-white">
         Already registered?
         {{ ' ' }}
-        <a href="#" class="font-semibold leading-6 text-purple-800 hover:text-purple-500">Log In</a>
+        <router-link to="/login">
+        <p class="font-semibold leading-6 text-purple-800 hover:text-purple-500">Log In</p>
+        </router-link>
       </p>
     </div>
   </div>

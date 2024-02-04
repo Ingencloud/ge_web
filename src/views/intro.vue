@@ -1,21 +1,20 @@
 <template>
   <div id="app" class="font-sans text-center">
-    <preloader :loading="showPreloader" />
-
-    <div class="absolute inset-0">
-    <div class="w-full lg:w-1/2 justify-center">
+     <div class="flex inset-0">
+    <div class="w-full lg:w-1/2 justify-start">
       <video 
-  ref="videoPlayer"
-        playsinline
-        autoplay
-                @loadeddata="handlevideoLoaded"
-                class="w-1/2 h-full object-fill shadow-xl ring-1 ring-gray-400/10"
->
-        <source class="h-1/2 w-full object-fill" src="../assets/ge.webm" type="video/webm" />
+      controls 
+      autoplay 
+      muted 
+      loop 
+      class="videoSize object-fill shadow-xl ring-1 ring-gray-400/10 md:mr-4 lg:mr-0">
+        <source src="../assets/ge.webm" type="video/webm" />
       </video>
     </div>
-    <div class=" absolute inset-0 items-center justify-center">
-        <div v-if="showLogo" class="w-96 mt-6 p-8 animate-fade-in-up">
+
+
+    <div class=" flex min-h-full flex-1 flex-col inset-0 items-center justify-center">
+        <div v-if="showLogo" class="w-96 mt-2 p-8 animate-fade-in-up">
           <img class="mb-2 md:mb-10" src="../assets/logo.png" alt="" />
         </div>
         <div v-if="showText" class="w-full p-8 animate-fade-in-up">
@@ -28,7 +27,7 @@
       <div class="modal-content">
         <div class="w-auto xl:max-w-xl p-6 space-y-8 md:p-8 rounded-lg shadow-xl " style="background-color: rgba(17, 24, 39, 0.5);">
                 <h2 class="text-2xl font-bold text-gray-900 opacity-100 dark:text-white opac">
-                   Becoming the Tackies
+                   #BecomingtheTackies!
                 </h2>        <h2 class="text-xl md:mb-6 text-white" >Wednesday 1st May,2024</h2>
 
               <Countdown />        <p class="mb-4">Kindly Let us know if you will be in attendance</p>
@@ -53,36 +52,26 @@
       </div>
             </div>
 </div>
-    </div>
+    </div> 
 
-    <div v-if="showModal1" class="modal fixed inset-0 z-10 w-screen overflow-y-auto">
-      <div class="modal-content">
-        <div class="w-auto xl:max-w-xl p-6 space-y-8 md:p-8 rounded-lg shadow-xl " style="background-color: rgba(17, 24, 39, 0.5);">
-          <h2 class="text-2xl font-bold text-gray-900 opacity-100 dark:text-white">
-                  We are sorry you can't make it to our union on this date. Your good wishes and thoughts are really appreciated.
-                </h2>   
-                <h2 class="text-2xl mt-10 font-bold text-gray-900 opacity-100 dark:text-white">
-Gilbert & Edinam                </h2> 
-                              <div>
 
-        </div>
+    
+     
       </div>
-            </div>
+       
+   
 
        
-    </div>
-    </div>
   
 
     <div class="md:hidden">
       <!-- Mobile View: Form overlay on the image -->
       <div class="absolute inset-0" >          
         <video
-        ref="videoPlayer"
-        playsinline
         autoplay
+        loop
+        playsinline
         class="w-full h-full object-cover shadow-xl ring-1 ring-gray-400/10"
-        @loadeddata="handlevideoLoaded"
       >
         <!-- Use your video source URL here -->
         <source src="../assets/ge.webm" type="video/webm" />
@@ -103,7 +92,7 @@ Gilbert & Edinam                </h2>
       <div class="modal-content">
         <div class="w-auto xl:max-w-xl p-6 space-y-8 md:p-8 rounded-lg shadow-xl " style="background-color: rgba(17, 24, 39, 0.5);">
                 <h2 class="text-2xl font-bold text-gray-900 opacity-100 dark:text-white opac">
-                  #BecomingtheTackies!
+                   #BecomingtheTackies!
                 </h2>        <h2 class="text-xl md:mb-6 text-white" >Wednesday 1st May,2024</h2>
 
               <Countdown />        <p class="mb-4">Kindly Let us know if you will be in attendance</p>
@@ -137,19 +126,17 @@ Gilbert & Edinam                </h2>
 import { ref, onMounted } from 'vue';
 import { formatDuration, intervalToDuration } from 'date-fns';
 import Countdown from '../components/countdown.vue';
-import Preloader from '@/components/preloader.vue';
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: 'Intro',
   components: {
-    Countdown,
-    Preloader
+    Countdown
   },
 
   data(){
     return {
-      showModal1: false,
+      showModal1: false
     }
   },
   setup() {
@@ -159,35 +146,9 @@ export default {
     const weddingDate = new Date('2024-05-01');
     const countdownMessage = ref('');
     const showModal1 = ref(false);
-    const showPreloader = ref(true);
-    const videoEnded = ref(false);
-    // const videoLoaded = ref(false);
-  
-
 
 
     onMounted(() => {
-      onMounted(() => {
-  const videoPlayer = document.getElementById('videoPlayer');
-
-  if (videoPlayer) {
-    videoPlayer.addEventListener('ended', () => {
-      videoEnded.value = true;
-    });
-
-    // Add this block to use setPointerCapture
-    videoPlayer.addEventListener('pointerdown', (event) => {
-      videoPlayer.setPointerCapture(event.pointerId);
-    });
-
-    videoPlayer.addEventListener('pointerup', () => {
-      videoPlayer.releasePointerCapture(event.pointerId);
-    });
-  }
-
-  // ... (unchanged onMounted code)
-});
-
       // Show text after a delay
       setTimeout(() => {
         showModal.value = true;
@@ -205,20 +166,10 @@ export default {
         showLogo.value = true;
       }, 5000); // 8000 milliseconds = 5 seconds
 
-      setTimeout(() => {
-      showPreloader.value = false;
-  }, 20000); // 20000 milliseconds = 20 seconds
-
       setInterval(() => {
         const now = new Date();
         const duration = intervalToDuration({ start: now, end: weddingDate, unit: 'seconds' });
         countdownMessage.value = formatDuration(duration);
-        if (videoEnded.value) {
-      showModal.value = true;
-      showModal1.value = false;
-      showLogo.value = false;
-      showText.value = false;
-    }
       }, 1000);
     });
 
@@ -227,34 +178,12 @@ export default {
       showModal1.value = false;
     };
 
-    const handleVideoLoaded = function() {
-      const videoPlayer = this.$refs.videoPlayer;
-
-if (videoPlayer) {
-  videoPlayer.addEventListener('loadedmetadata', () => {
-    videoPlayer.play()
-      .then(() => {
-        console.log('Video playing...');
-        this.videoLoaded.value = true;
-        this.showPreloader.value = false;
-      })
-      .catch((error) => {
-        console.error('Error playing video:', error);
-      });
-  });
-} else {
-  console.error('Video player not found');
-}
-};
-
     return {
       showModal,
       showText,
       showLogo,
       countdownMessage,
       closeModal,
-      showPreloader,
-      handleVideoLoaded
     };
   },
   methods: {
@@ -265,15 +194,7 @@ if (videoPlayer) {
     noEvent() {
       this.showModal1 = true;
       this.showModal = false;
-    },
-    videoLoaded() {
-    this.$refs.videoPlayer.play();
-  //   window.onload = function() {
-  //   document.getElementById("autoplay").play();
-  // }
-    this.videoLoaded = true;
-    this.showPreloader = false;
-  },
+    }
   },
   // methods: {
   //   formatDuration(duration) {
@@ -291,6 +212,12 @@ if (videoPlayer) {
 <style scoped>
 #app {
 min-height: 100vh;
+max-height: 100vh;
+}
+
+.videoSize{
+  height: 100vh;
+  width: 100vw;
 }
 
 .login-form {

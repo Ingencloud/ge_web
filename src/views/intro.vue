@@ -8,6 +8,7 @@
     loop 
     @play="onVideoPlay"
     @ended="onVideoEnd"
+    playsinline
     class="videoSize overlay-image object-fill shadow-xl ring-1 ring-gray-400/10 md:mr-4 lg:mr-0"
   >
     <source src="../assets/ge.webm" type="video/webm" />

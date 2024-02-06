@@ -148,7 +148,6 @@ import { ref, onMounted } from 'vue';
 import { formatDuration, intervalToDuration } from 'date-fns';
 import Countdown from '../components/countdown.vue';
 import Video from './videoplayer.vue'
-import 'video.js/dist/video-js.css'
 
 
 

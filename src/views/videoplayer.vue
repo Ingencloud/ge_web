@@ -19,7 +19,6 @@
   <script>
     import { defineComponent } from 'vue'
     import { VideoPlayer } from '@videojs-player/vue'
-    import 'video.js/dist/video-js.css'
   
     export default defineComponent({
         // eslint-disable-next-line vue/multi-word-component-names

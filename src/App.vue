@@ -11,6 +11,7 @@
 <script>
 import Preloader from '@/components/preloader.vue';
 
+
 export default {
   name: 'App',
   components: {Preloader} ,

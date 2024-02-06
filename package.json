@@ -23,6 +23,7 @@
     "video.js": "^8.10.0",
     "vue": "^3.2.13",
     "vue-carousel": "^0.18.0",
+    "vue-core-video-player": "^0.2.0",
     "vue-router": "^4.0.3",
     "vue3-carousel": "^0.3.1"
   },

@@ -2,7 +2,12 @@
   <div id="app" class="font-sans text-center">
      <div class="flex inset-0">
     <div class="w-full lg:w-1/2 justify-start">
-  <video 
+      <!-- <div  class="videoSize overlay-image object-fill shadow-xl ring-1 ring-gray-400/10 md:mr-4 lg:mr-0"> -->
+    <Video
+ 
+     />
+  <!-- </div> -->
+  <!-- <video 
     controls 
     autoplay 
     loop 
@@ -12,15 +17,15 @@
     class="videoSize overlay-image object-fill shadow-xl ring-1 ring-gray-400/10 md:mr-4 lg:mr-0"
   >
     <source src="../assets/vid.webm" type="video/webm" />
-  </video>
-  
-  <div v-if=showPlay class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+  </video> -->
+<!--   
+<div v-if=showPlay class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="w-16 h-16 inline">
       <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
       <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
     </svg>
     <p class="text-2xl text-white lg:text-white">Begin your journey</p>
-  </div>
+  </div> -->
 </div>
 
     </div>
@@ -142,12 +147,17 @@
 import { ref, onMounted } from 'vue';
 import { formatDuration, intervalToDuration } from 'date-fns';
 import Countdown from '../components/countdown.vue';
+import Video from './videoplayer.vue'
+import 'video.js/dist/video-js.css'
+
+
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: 'Intro',
   components: {
     Countdown,
+    Video
   },
 
   data(){

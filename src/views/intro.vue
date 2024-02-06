@@ -11,7 +11,7 @@
     playsinline
     class="videoSize overlay-image object-fill shadow-xl ring-1 ring-gray-400/10 md:mr-4 lg:mr-0"
   >
-    <source src="../assets/ge.webm" type="video/webm" />
+    <source src="../assets/vid.webm" type="video/webm" />
   </video>
   
   <div v-if=showPlay class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">

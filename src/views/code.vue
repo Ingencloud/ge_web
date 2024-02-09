@@ -9,6 +9,8 @@
           <div class="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 ">
   <div class="md:mx-auto md:w-full md:max-w-md">
     <img class="mx-auto h-56 w-auto" src="../assets/logo.png" alt="Your Company" />
+    <p class="mb-2 md:mb-6 text-xl lg:text-2xl text-white lg:text-gray-900 font-bold">And over all these virtues put on love, which binds them all together in perfect unity</p> <br> <p class="mb-2 md:mb-6 text-white font-bold lg:text-2xl lg:text-gray-900">Colossians 3:14 </p>
+
     <h2 class="mt-10 text-center text-4xl font-bold leading-9 tracking-tight text-gray-900">Enter Invite Code</h2>
   </div>
 
@@ -50,6 +52,8 @@
           <div class="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
   <div class="sm:mx-auto sm:w-full sm:max-w-sm">
     <img class="mx-auto h-56 w-auto" src="../assets/logo2.png" alt="Your Company" />
+    <p class="text-md text-center lg:text-2xl text-white lg:text-gray-900 font-extrabold" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">And over all these virtues put on love, which binds them all together in perfect unity</p> <br> <p class="mb-6 text-white font-bold text-md lg:text-2xl lg:text-gray-900">Colossians 3:14 </p>
+
     <h2 class="mt-2 text-center text-2xl font-bold leading-9 tracking-tight text-white">Enter Invite Code</h2>
   </div>
 

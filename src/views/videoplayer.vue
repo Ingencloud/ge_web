@@ -2,8 +2,8 @@
         
 
     <video-player
-    class="videoSize overlay-image object-contain shadow-xl ring-1 ring-gray-400/10 md:mr-4 lg:mr-0"
-    src="/assets/vid.webm"
+    class="videoSize object-fill bg-black lg:bg-white shadow-xl ring-1 ring-gray-400/10 md:mr-4 lg:mr-0"
+    src="/assets/vid.mp4"
     controls
      playsinline 
      autoplay
@@ -49,7 +49,7 @@
 
   /* Overlay image on the video */
   .video-container {
-    position: relative;
+    position: fixed;
   }
 
   .overlay-image {

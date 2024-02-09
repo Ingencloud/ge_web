@@ -120,6 +120,7 @@
           "ALLOW-ORIGIN": "*",
           "control-allow-headers": "*",
           "control-allow-origin": "*",
+          "Accept": "/",
         },
       });
 
@@ -129,6 +130,7 @@
         })
         .then((response) => {
           console.log(response.data);
+          localStorage.setItem('token', response.data.token);
           this.$router.push("/home");
         })
         .catch((error) => {

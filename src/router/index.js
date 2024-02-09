@@ -8,6 +8,8 @@ import OurStory from '../components/ourstory.vue';
 import Schedule from '../components/schedule.vue';
 import Gallery from '../components/gallery.vue';
 import Gift from '../components/gift.vue';
+import Sorry from '../views/sorry.vue'
+import isAuthenticated from '../middleware/isAuthenticated'
 
 
 const routes = [
@@ -29,12 +31,19 @@ const routes = [
   {
     path: '/login',
     name: 'Login',
-    component: Login
+    component: Login,
+    
   },
   {
     path: '/home',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: { requiresAuth: true } // Require authentication for this route
+  },
+  {
+    path: '/sorry',
+    name: 'Sorry',
+    component: Sorry
   },
   { path: '/ourstory', component: OurStory, meta: { scrollTo: '#ourstory-section' } },
   { path: '/schedule', component: Schedule, meta: { scrollTo: '#schedule-section' } },
@@ -51,6 +60,8 @@ const routes = [
   }
 ]
 
+
+
 const router = createRouter({
   history: createWebHashHistory(),
   routes,
@@ -62,8 +73,16 @@ const router = createRouter({
     } else {
       return { top: 0 };
     }
-  },
-});
+  }
+})
 
+// Navigation guard to check if route requires authentication
+router.beforeEach((to, from, next) => {
+  if (to.meta.requiresAuth && !isAuthenticated()) {
+    next('/login') // Redirect to login page if not authenticated
+  } else {
+    next()
+  }
+})
 
 export default router

@@ -16,6 +16,7 @@
     "core-js": "^3.8.3",
     "date-fns": "^3.3.0",
     "flowbite": "^2.2.1",
+    "or": "^0.2.0",
     "postcss": "^8",
     "swiper": "^11.0.5",
     "tailwindcss": "^3",

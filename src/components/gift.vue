@@ -26,7 +26,7 @@
 </svg>
             <div class="text-left rtl:text-right" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
                 <div class="mb-1 text-xs">Send Us Financial Gift</div>
-                <div class="-mt-1 font-sans text-sm font-semibold">Momo Number</div>
+                <div class="-mt-1 font-sans text-sm font-semibold"><a href="https://wa.me/+233552567317"></a> Message couple</div>
             </div>
         </a>
         <!-- <a href="#" class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">

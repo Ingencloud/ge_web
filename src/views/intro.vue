@@ -29,16 +29,16 @@
     </div>
        
 
-    <div class=" flex min-h-full flex-1 flex-col inset-0 items-center justify-center">
-        <div v-if="showLogo" class="w-250 mt-2 p-8 animate-fade-in-up">
+    <!-- <div class=" flex min-h-full flex-1 flex-col inset-0 items-center justify-center"> -->
+        <!-- <div v-if="showLogo" class="w-250 mt-2 p-8 animate-fade-in-up">
           <img class="mb-2 md:mb-10" src="../assets/logo.png" alt="" />
-        </div>
-        <div v-if="showText" class="w-full p-8 animate-fade-in-up">
+        </div> -->
+        <!-- <div v-if="showText" class="w-full p-8 animate-fade-in-up">
           <h2 class="lg:text-6xl text-2xl lg:mb-10 text-white lg:text-gray-900 font-bold"  >We are becoming...  <p class="font-bold" style="font-style: italic; font-family: sans-serif;" > the Tackies!!</p></h2>
           <p class="mb-2 md:mb-6 text-xl lg:text-2xl text-white lg:text-gray-900 font-bold">And over all these virtues put on love, which binds them all together in perfect unity</p> <br> <p class="mb-2 md:mb-6 text-white lg:text-gray-900">Colossians 3:14 </p>
           
-        </div>
-      </div>
+        </div> -->
+      <!-- </div> -->
       <div v-if="showModal1" class="modal fixed inset-0 z-10 w-screen overflow-y-auto">
       <div class="modal-content">
         <div class="w-auto xl:max-w-xl p-6 space-y-8 md:p-8 rounded-lg shadow-xl " style="background-color: rgba(17, 24, 39, 0.5);">
@@ -53,6 +53,8 @@
       <div v-if="showModal" class="modal fixed inset-0 z-10 w-screen overflow-y-auto">
       <div class="modal-content">
         <div class="w-auto xl:max-w-xl p-6 space-y-8 md:p-8 rounded-lg shadow-xl " style="background-color: rgba(17, 24, 39, 0.5);">
+          <img class="mb-2 md:mb-4" src="../assets/logo.png" alt="" />
+
                 <h2 class="text-2xl font-bold text-white opacity-100 dark:text-white opac">
                    #BecomingtheTackies!
                 </h2>        <h2 class="text-xl md:mb-6 text-white" >Wednesday 1st May,2024</h2>
@@ -215,24 +217,24 @@ export default {
   setInterval(() => {
     const video = document.querySelector('video');
     if (video) {
-      const halfwayPoint = (1 / 4) * video.duration;
-      if (video.currentTime >= halfwayPoint) {
-        showText.value = true;
-        showLogo.value = true;
-        showLogo1.value = false;
-      }
+      // const halfwayPoint = (1 / 4) * video.duration;
+      // if (video.currentTime >= halfwayPoint) {
+      //   showText.value = true;
+      //   showLogo.value = true;
+      //   showLogo1.value = false;
+      // }
       const threeFourthPoint = (3 / 4) * video.duration;
     if (video.currentTime >= threeFourthPoint) {
       showText.value = false;
       showLogo.value = false;
       showModal.value = true; // Show modal when 3/4 of the video is complete
     }
-    const fourFourthPoint = (4 / 4) * video.duration;
-    if (video.currentTime >= fourFourthPoint) {
-      showText.value = false;
-      showLogo.value = false;
-      showModal.value = true; // Show modal when 3/4 of the video is complete
-    }
+    // const fourFourthPoint = (4 / 4) * video.duration;
+    // if (video.currentTime >= fourFourthPoint) {
+    //   showText.value = false;
+    //   showLogo.value = false;
+    //   showModal.value = true; // Show modal when 3/4 of the video is complete
+    // }
   
     }
   }, 10000);
@@ -285,6 +287,8 @@ onVideoPlay() {
     // Show necessary elements
     this.showLogo1 = true;
     this.showPlay = false;
+    this.showModal = true;
+
 },
   //   onVideoPlay() {
   //   this.isVideoPlaying = true;

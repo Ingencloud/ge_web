@@ -129,7 +129,6 @@
           number: this.login.number
         })
         .then((response) => {
-          console.log(response.data);
           localStorage.setItem('token', response.data.token);
           // document.cookie = "jwt="+response.data.token
           document.cookie = `jwt=${response.data.token}`

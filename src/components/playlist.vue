@@ -82,6 +82,7 @@ export default {
     submitForm(){
       const token = localStorage.getItem('token');
       const extAPI = axios.create({
+        withCredentials: true,
         baseURL: "https://engage.becomingthetackies.site/api",
         headers: {
           "Accept": "/",

@@ -99,7 +99,7 @@
   <script>
   // @ is an alias to /src
   import axios from 'axios';
-  
+  import router from "../router";
   export default {
     // eslint-disable-next-line vue/multi-word-component-names
     name: 'Login',
@@ -115,7 +115,7 @@
     methods: {
     submitForm(){
       const extAPI = axios.create({
-        baseURL: "https://engage.becomingthetackies.site/api",
+        baseURL: "http://localhost:3000",
         headers: {
           "ALLOW-ORIGIN": "*",
           "control-allow-headers": "*",
@@ -131,7 +131,10 @@
         .then((response) => {
           console.log(response.data);
           localStorage.setItem('token', response.data.token);
-          this.$router.push("/home");
+          // document.cookie = "jwt="+response.data.token
+          document.cookie = `jwt=${response.data.token}`
+            // this.$router.push("/home");
+            router.push({'name': "Home"})
         })
         .catch((error) => {
           this.showError = true;

@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import intro from "../views/intro.vue";
 import Register from "../views/Register.vue";
@@ -38,6 +38,7 @@ const routes = [
     path: '/home',
     name: 'Home',
     component: Home,
+    // beforeEnter: checkAuthentication
     meta: { requiresAuth: true } // Require authentication for this route
   },
   {
@@ -63,7 +64,8 @@ const routes = [
 
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  // history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
@@ -84,5 +86,11 @@ router.beforeEach((to, from, next) => {
     next()
   }
 })
+
+// function checkAuthentication(to, from, next){
+//     console.log(isAuthenticated());
+//     if(isAuthenticated()) next();
+//     else next("/login")
+// }
 
 export default router

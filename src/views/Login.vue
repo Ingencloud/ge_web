@@ -113,8 +113,9 @@
     };
   },
     methods: {
-    submitForm(){
+      submitForm(){
       const extAPI = axios.create({
+        withCredentials: true,
         baseURL: "https://engage.becomingthetackies.site/api",
         headers: {
           "ALLOW-ORIGIN": "*",
@@ -129,11 +130,11 @@
           number: this.login.number
         })
         .then((response) => {
+          console.log(response.data);
           localStorage.setItem('token', response.data.token);
-          // document.cookie = "jwt="+response.data.token
           document.cookie = `jwt=${response.data.token}`
-            // this.$router.push("/home");
-            router.push({'name': "Home"})
+
+          router.push({'name': "Home"})
         })
         .catch((error) => {
           this.showError = true;

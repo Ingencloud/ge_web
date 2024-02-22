@@ -185,14 +185,14 @@ export default {
 
     onMounted(() => {
       // Show text after a delay
-      setTimeout(() => {
-        showModal.value = false;
-        showModal1.value = false;
-        showLogo1.value = false;
-        showLogo.value = false;
-        showText.value = false;
-        console.log('Modal should be visible now');
-      }, 25000); // 20000 milliseconds = 20 seconds
+      // setTimeout(() => {
+      //   showModal.value = true;
+      //   showModal1.value = false;
+      //   showLogo1.value = false;
+      //   showLogo.value = false;
+      //   showText.value = false;
+      //   console.log('Modal should be visible now');
+      // }, 15000); // 20000 milliseconds = 20 seconds
 
       // setTimeout(() => {
       //   showText.value = true;
@@ -223,7 +223,7 @@ export default {
       //   showLogo.value = true;
       //   showLogo1.value = false;
       // }
-      const threeFourthPoint = (3 / 4) * video.duration;
+      const threeFourthPoint = (2 / 4) * video.duration;
     if (video.currentTime >= threeFourthPoint) {
       showText.value = false;
       showLogo.value = false;

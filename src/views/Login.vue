@@ -98,8 +98,7 @@
   
   <script>
   // @ is an alias to /src
-  import axios from 'axios';
-  import router from "../router";
+  import router from "../router";  import axios from 'axios';
   export default {
     // eslint-disable-next-line vue/multi-word-component-names
     name: 'Login',
@@ -113,34 +112,41 @@
     };
   },
     methods: {
-      submitForm(){
-      const extAPI = axios.create({
+      submitForm() {
+    const extAPI = axios.create({
         withCredentials: true,
         baseURL: "https://engage.becomingthetackies.site/api",
         headers: {
           "ALLOW-ORIGIN": "*",
           "control-allow-headers": "*",
           "control-allow-origin": "*",
-          "Accept": "/",
         },
-      });
+    });
 
-      extAPI
+    extAPI
         .post("/login", {
-          number: this.login.number
+            number: this.login.number
         })
         .then((response) => {
-          console.log(response.data);
-          localStorage.setItem('token', response.data.token);
-          document.cookie = `jwt=${response.data.token}`
+            console.log(response.data);
+            localStorage.setItem('token', response.data.token);
+            document.cookie = `jwt=${response.data.token}`;
 
-          router.push({'name': "Home"})
+            // this.$router.push("/home");
+            router.push({'name': "Home"})
         })
         .catch((error) => {
-          this.showError = true;
-          console.error('Error logging In user:', error);
+            this.showError = true;
+            if (error.response) {
+                console.error('Error logging in user:', error.response.data);
+            } else {
+                console.error('Error logging in user:', error.message);
+            }
         });
-    },
+}
+
+
+
     
   }
   }

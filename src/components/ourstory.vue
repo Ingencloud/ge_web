@@ -19,12 +19,12 @@ Our Story
             
             <div class="lg:max-w-lg text-justify" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
               <p class="text-lg lg:text-2xl font-medium text-left leading-8 text-black">
-                In a few months, we'll be celebrating the formal start of our forever journey, and we're thrilled that you've chosen to be a part of it. What began as a simple gesture—loaning a laptop—has transformed into beautiful years of friendship, love, and pure bliss.
+                In just a few months, we'll be embarking on our forever adventure, and we're overjoyed that you'll be a part of it. What began with a simple act of kindness—Edi lending a laptop—has blossomed into years filled with friendship, love, and sheer happiness.
               </p>
               <img src="../assets/23.jpg" class="rounded-lg mt-4" alt="">
 
               <p class="mb-4 mt-4 text-lg lg:text-2xl font-medium  leading-8 text-left text-black" >
-                Our story unfolds during our first year at Ashesi when fate Work Sansvened in the form of an urgent assignment. I (Gilbert) found myself in need of a laptop, and Edi graciously offered hers. However, the catch was that I had to reciprocate by tackling her assignment. Though she ended up with a better grade, this mafioso-style arrangement marked the beginning of our journey and our first conversation.             
+                Our journey traces back to our first semester at Ashesi when our paths crossed over a written and oral assignment. In a quirky twist of fate, Edi, somewhat assertively, convinced Gilbert to handle our assignment. Soon enough, we realized that our friendship circles intertwined, making Edi's room (Room 202) a regular hangout spot between classes—a place to catch a nap or simply chill during off periods.
                </p>
                <img src="../assets/22.jpg" class="rounded-lg" alt="">
 
@@ -32,12 +32,11 @@ Our Story
           </div>
           <div class="relative isolate px-6 pt-2 lg:px-8 animate-fade-in-right" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
             <p class="mb-4 text-lg leading-8 lg:text-2xl font-medium  text-left text-black">
-                  As we continued through our college years, our connection remained cordial until our second year. I was struggling with accounting, and Edi, ever the savior, volunteered to tutor me before the exam. In those study sessions, we not only tackled academic challenges but also shared our aspirations and the reasons behind my last-minute exam cramming.             
+              As our conversations evolved from campus buzz to personal interests, we discovered that we were polar opposites; Edi cherished Disney Shows, while Gilbert was all about sports. Yet, during our summer school days, we found common ground in our love for music and the undeniable craving for milkshakes, even if being lactose intolerant tried to intervene.
                  </p>
                  <img src="../assets/11.jpg" class="rounded-lg"  alt="">
                  <p class="mt-6 text-lg lg:text-2xl font-medium  leading-8 text-left text-black">
-              Countless conversations and dates followed as I (Gilbert) tried to convince Edi that love is the ultimate formula. Despite the initial "Oh, I remember you from class" moments and our Ashesi adventures, love prevailed.Now, after these adventures and countless shared moments, we invite you to join Gilbert and Edinam as we say "I do" and eagerly turn the page to the next chapter of our love story.
-              </p>
+                  This period marked the commencement of our journey to graduation, teaching us that by embracing each other's uniqueness, we could navigate life's twists and turns together. Despite enduring a year-plus of long-distance (Weija to Sakumono totally qualifies), we find ourselves a step closer to our most significant day yet, and we can hardly wait to celebrate it with you.              </p>
   </div>
   
         </div>

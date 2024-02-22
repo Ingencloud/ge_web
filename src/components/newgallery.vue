@@ -91,19 +91,38 @@ Gallery</h2>
   }
 
   .modal {
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 80%;
-  height: 80%;
-  justify-content: center;
-  align-items: center;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure modal is on top of everything */
+    overflow: hidden; /* Prevent background scrolling */
 }
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto; /* Enable scrolling for modal content if it overflows */
+  }
+
   .modal-image {
-  max-width: 50%;
-  max-height: 50%;
-}
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  body.modal-open {
+    overflow: hidden; /* Hide scrollbar on the body when modal is open */
+  }
 
   @media screen {
     

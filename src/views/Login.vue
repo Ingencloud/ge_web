@@ -98,7 +98,8 @@
   
   <script>
   // @ is an alias to /src
-  import router from "../router";  import axios from 'axios';
+  // import router from "../router";  
+  import axios from 'axios';
   export default {
     // eslint-disable-next-line vue/multi-word-component-names
     name: 'Login',
@@ -132,8 +133,8 @@
             localStorage.setItem('token', response.data.token);
             document.cookie = `jwt=${response.data.token}`;
 
-            // this.$router.push("/home");
-            router.push({'name': "Home"})
+            this.$router.push("/home");
+            // router.push({'name': "Home"})
         })
         .catch((error) => {
             this.showError = true;

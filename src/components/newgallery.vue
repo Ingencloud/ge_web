@@ -84,6 +84,16 @@ export default {
   transform: rotateY(0) scale(1.1);
 }
 
+.modal {
+  display: flex;
+	position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  justify-content: center;	 
+  align-items: center;	  
+}	
 .modal-content {
   background-color: white;
   padding: 20px;

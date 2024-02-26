@@ -67,7 +67,7 @@ export default {
   },
   methods: {
     redirectToMap() {
-      window.location.href = 'https://maps.app.goo.gl/iYTiJ9gEgeoei7WX7?g_st=iw';
+      window.location.href = 'http://maps.google.com/?q=5.668627,-0.125869&q=5.6686270,-0.1258690&entry=gps&lucs=,47071704,47069508,47084304,94206604&g_ep=CAISDTYuMTAyLjMuNDI5MjAYACDXggMqJCw0NzA3MTcwNCw0NzA2OTUwOCw0NzA4NDMwNCw5NDIwNjYwNEICR0g%3D&g_st=i';
     }
   }
 }

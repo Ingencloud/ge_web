@@ -122,8 +122,7 @@ Gallery</h2>
 
   body.modal-open {
     overflow: hidden; /* Hide scrollbar on the body when modal is open */
-  }
-
+}
   @media screen {
     
   }

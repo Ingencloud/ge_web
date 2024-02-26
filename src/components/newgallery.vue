@@ -91,15 +91,15 @@ Gallery</h2>
   }
 
   .modal {
-  display: flex;
+  /* display: flex; */
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   max-width: 600px; /* Set max-width to limit modal width */
-  max-height: 80vh; /* Set max-height to limit modal height to 80% of viewport height */
+  max-height: 100vh; /* Set max-height to limit modal height to 80% of viewport height */
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   justify-content: center;
   align-items: center;

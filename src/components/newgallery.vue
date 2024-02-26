@@ -91,7 +91,7 @@ Gallery</h2>
   }
 
   .modal {
-  /* display: flex; */
+  display: flex;
   position: fixed;
   top: 50%;
   left: 50%;

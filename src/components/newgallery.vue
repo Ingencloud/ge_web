@@ -13,9 +13,9 @@ Gallery</h2>
     </Carousel>
 
     <div v-if="modalOpen"  @click="closeModal" class="modal fixed inset-0 z-10 w-screen overflow-y-auto">
-      <div v-for="image in images" :key="image.id">
+      <!-- <div v-for="image in images" :key="image.id"> -->
       <img :src="selectedImage.url" class="modal-image"  @click.stop />
-    </div>
+    <!-- </div> -->
     </div>
 </div>
     </section>

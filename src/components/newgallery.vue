@@ -119,10 +119,10 @@ Gallery</h2>
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  max-width: 600px; /* Set max-width to limit modal width */
-  max-height: 100vh; /* Set max-height to limit modal height to 80% of viewport height */
+  width: auto; /* Set width to auto to fit the content */
+  height: auto; /* Set height to auto to fit the content */
+  max-width: 80%; /* Set max-width to limit modal width */
+  max-height: 80%; /* Set max-height to limit modal height to 80% of viewport height */
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   justify-content: center;
   align-items: center;
@@ -130,29 +130,17 @@ Gallery</h2>
   overflow: auto; /* Enable scrolling for modal content if it overflows */
 }
 
+.modal-image {
+  max-width: 100%; /* Ensure image fits within the modal */
+  max-height: 100%; /* Ensure image fits within the modal */
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+}
+
 body.modal-open {
   overflow: hidden; /* Hide scrollbar on the body when modal is open */
 }
-/* .modal-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 80%;
-    max-height: 80%;
-    overflow: auto; 
-  } */
-
-  .modal-image {
-    max-width: 70%;
-    max-height: 70%;
-    border-radius: 5px;
-    display: block;
-    margin: 0 auto;
-  }
-
-  body.modal-open {
-    overflow: hidden; /* Hide scrollbar on the body when modal is open */
-  }
   @media screen {
     
   }

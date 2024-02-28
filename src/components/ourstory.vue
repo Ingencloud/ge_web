@@ -19,25 +19,26 @@ Our Story
             
             <div class="lg:max-w-lg text-justify" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
               <p class="text-lg lg:text-2xl font-medium text-left leading-8 text-black">
-                In just a few months, we'll be embarking on our forever adventure, and we're overjoyed that you'll be a part of it. What began with a simple act of kindness—Edi lending a laptop—has blossomed into years filled with friendship, love, and sheer happiness.
-              </p>
+                In just a few months, the grand adventure of 'forever' begins, and we're jumping with joy to have you right there with us! Our story started with a sweet act of kindness—Edi lending me a laptop to complete an assignment because mine just wouldn’t work—and from there, it bloomed into years filled with laughter, love, and bliss.              </p>
               <img src="../assets/23.jpg" class="rounded-lg mt-4" alt="">
 
               <p class="mb-4 mt-4 text-lg lg:text-2xl font-medium  leading-8 text-left text-black" >
-                Our journey traces back to our first semester at Ashesi when our paths crossed over a written and oral assignment. In a quirky twist of fate, Edi, somewhat assertively, convinced Gilbert to handle our assignment. Soon enough, we realized that our friendship circles intertwined, making Edi's room (Room 202) a regular hangout spot between classes—a place to catch a nap or simply chill during off periods.
-               </p>
+                Being our first semester at Ashesi and taking several classes together, we were constantly in each other's space. In a hilarious twist of fate, Edi, with a hint of persuasion, talked me into completing more essay assignments for her. But we got closer, and soon our friend circles meshed, and Edi's room (Room 202) became the go-to place for a nap haven or a chill spot between classes.               </p>
                <img src="../assets/22.jpg" class="rounded-lg" alt="">
 
             </div>
           </div>
           <div class="relative isolate px-6 pt-2 lg:px-8 animate-fade-in-right" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
             <p class="mb-4 text-lg leading-8 lg:text-2xl font-medium  text-left text-black">
-              As our conversations evolved from campus buzz to personal interests, we discovered that we were polar opposites; Edi cherished Disney Shows, while Gilbert was all about sports. Yet, during our summer school days, we found common ground in our love for music and the undeniable craving for milkshakes, even if being lactose intolerant tried to intervene.
-                 </p>
+              Ultimately, we started to have more conversations with each other than with the friend groups. Our chats shifted from campus gossip to personal quirks, and we realized we were total opposites; Edi was all about TV Shows and lounging while I was all about sports. But hold on, during our summer school escapades, we discovered common ground in our love for music and an unstoppable craving for milkshakes, even though both of us were lactose intolerant.Ultimately, we started to have more conversations with each other than with the friend groups. Our chats shifted from campus gossip to personal quirks, and we realized we were total opposites; Edi was all about TV Shows and lounging while I was all about sports. But hold on, during our summer school escapades, we discovered common ground in our love for music and an unstoppable craving for milkshakes, even though both of us were lactose intolerant.                 </p>
                  <img src="../assets/11.jpg" class="rounded-lg"  alt="">
                  <p class="mt-6 text-lg lg:text-2xl font-medium  leading-8 text-left text-black">
-                  This period marked the commencement of our journey to graduation, teaching us that by embracing each other's uniqueness, we could navigate life's twists and turns together. Despite enduring a year-plus of long-distance (Weija to Sakumono totally qualifies), we find ourselves a step closer to our most significant day yet, and we can hardly wait to celebrate it with you.              </p>
-  </div>
+                  This summer marked the start of our journey till date, and the moments we have shared kept teaching us that embracing each other's quirks was the secret sauce for navigating life's rollercoaster together. To be fair, having survived doing a five-year-plus long-distance relationship (Weija to Sakumono, if you're measuring), we're excited that we are now just a hop, skip, and a jump away from our big day.
+                </p> 
+                <p class="mt-6 text-lg lg:text-2xl font-medium  leading-8 text-left text-black">
+                  Get ready to join us in the celebration—we can't wait to make memories with you!                </p> 
+              
+              </div>
   
         </div>
       </div>

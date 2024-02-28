@@ -45,6 +45,21 @@ Gallery</h2>
 
     data() {
       return {
+        images: 
+      [
+        { id: 1, url: '/assets/15.jpg' },
+          { id: 2, url: '/assets/12.jpg' },
+          { id: 3, url: '../assets/13.jpg' },
+          { id: 4, url: '../assets/14.jpg' },
+          { id: 5, url: '../assets/17.jpg' },
+          { id: 6, url: '../assets/18.jpg' },
+          { id: 7, url: '/assets/19.jpg' },
+          { id: 8, url: '../assets/3.jpg' },
+          { id: 9, url: '../assets/4.jpg' },
+          { id: 10, url: '../assets/7.jpg' },
+          { id: 11, url: '../assets/8.jpg' },
+          // Add more image objects with unique IDs and URLs
+        ], 
         modalOpen: false,
         swiperOptions: {
           loop: true,
@@ -65,21 +80,21 @@ Gallery</h2>
       SwiperSlide,
     },
     props: {
-      images: 
-      [
-        { id: 1, url: '/assets/15.jpg' },
-          { id: 2, url: '/assets/12.jpg' },
-          { id: 3, url: '../assets/13.jpg' },
-          { id: 4, url: '../assets/14.jpg' },
-          { id: 5, url: '../assets/17.jpg' },
-          { id: 6, url: '../assets/18.jpg' },
-          { id: 7, url: '/assets/19.jpg' },
-          { id: 8, url: '../assets/3.jpg' },
-          { id: 9, url: '../assets/4.jpg' },
-          { id: 10, url: '../assets/7.jpg' },
-          { id: 11, url: '../assets/8.jpg' },
-          // Add more image objects with unique IDs and URLs
-        ], // Pass array of images to the component
+      // images: 
+      // [
+      //   { id: 1, url: '/assets/15.jpg' },
+      //     { id: 2, url: '/assets/12.jpg' },
+      //     { id: 3, url: '../assets/13.jpg' },
+      //     { id: 4, url: '../assets/14.jpg' },
+      //     { id: 5, url: '../assets/17.jpg' },
+      //     { id: 6, url: '../assets/18.jpg' },
+      //     { id: 7, url: '/assets/19.jpg' },
+      //     { id: 8, url: '../assets/3.jpg' },
+      //     { id: 9, url: '../assets/4.jpg' },
+      //     { id: 10, url: '../assets/7.jpg' },
+      //     { id: 11, url: '../assets/8.jpg' },
+      //     // Add more image objects with unique IDs and URLs
+      //   ], // Pass array of images to the component
     },
   };
   </script>

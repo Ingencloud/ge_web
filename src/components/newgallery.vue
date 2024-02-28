@@ -13,9 +13,9 @@ Gallery</h2>
     </Carousel>
 
     <div v-if="modalOpen"  @click="closeModal" class="modal fixed inset-0 z-10 w-screen overflow-y-auto">
-      <!-- <div v-for="image in images" :key="image.id"> -->
+      <div v-for="image in images" :key="image.id">
       <img :src="selectedImage.url" class="modal-image"  @click.stop />
-    <!-- </div> -->
+    </div>
     </div>
 </div>
     </section>
@@ -101,8 +101,8 @@ Gallery</h2>
   transform: translate(-50%, -50%);
   width: auto; /* Set width to auto to fit the content */
   height: auto; /* Set height to auto to fit the content */
-  max-width: 80%; /* Set max-width to limit modal width */
-  max-height: 80%; /* Set max-height to limit modal height to 80% of viewport height */
+  max-width: 100%; /* Set max-width to limit modal width */
+  max-height: 100%; /* Set max-height to limit modal height to 80% of viewport height */
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   justify-content: center;
   align-items: center;
@@ -111,8 +111,8 @@ Gallery</h2>
 }
 
 .modal-image {
-  max-width: 100%; /* Ensure image fits within the modal */
-  max-height: 100%; /* Ensure image fits within the modal */
+  max-width: 70%; /* Ensure image fits within the modal */
+  max-height: 70%; /* Ensure image fits within the modal */
   border-radius: 5px;
   display: block;
   margin: 0 auto;

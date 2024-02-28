@@ -14,7 +14,7 @@
 </svg>
 
                   Edinam</h2>
-                <h2 class="text-2xl lg:text-4xl font-bold text-gray-900 opacity-100 dark:text-white opac">
+                <h2 class="text-2xl lg:text-4xl font-bold text-white opacity-100 dark:text-white opac">
                    Wednesday 1st May, 2024
                 </h2>
               <Countdown />

@@ -41,7 +41,7 @@
      <h5 class="text-xl text-white">Bank Account Number:</h5><p class="text-lg text-white"> 0101042542300</p>
      <h5 class="text-xl text-white">Account Holder Name:</h5><p class="text-lg text-white"> Gilbert Nii Tackie</p>
       <h5 class="text-xl text-white">Branch:</h5><p class="text-lg text-white">West hills mall</p>
-    </div> <div>
+      <br>
      <h5 class="text-xl text-white">Bank Name: </h5> <p class="text-lg text-white">Stanbic Bank </p> 
      <h5 class="text-xl text-white">Bank Account Number:</h5><p class="text-lg text-white"> 9040007936391</p>
      <h5 class="text-xl text-white">Account Holder Name:</h5><p class="text-lg text-white">  Edinam Ama Tettey</p>
@@ -82,14 +82,14 @@
 .modal {
   display: flex;
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 0%;
+  left: 0%;
   transform: translate(-50%, -50%);
   width: auto; /* Set width to auto to fit the content */
   height: auto; /* Set height to auto to fit the content */
   max-width: 100%; /* Set max-width to limit modal width */
   max-height: 100%; /* Set max-height to limit modal height to 80% of viewport height */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 1); /* Semi-transparent background */
   justify-content: center;
   align-items: center;
   z-index: 9999; /* Ensure modal is on top of everything */

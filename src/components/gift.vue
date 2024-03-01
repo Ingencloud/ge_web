@@ -59,6 +59,11 @@
  export default {
     // eslint-disable-next-line vue/multi-word-component-names
     name: 'Gift',
+    data() {
+      return {
+        modalOpen: false,
+      };
+    },
     methods: {
     openModal() {
       this.modalOpen = true;

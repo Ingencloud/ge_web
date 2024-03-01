@@ -24,11 +24,11 @@
                 <form class="mt-8 space-y-6" v-on:submit.prevent="submitForm" method="POST" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
                     <div>
                         <label for="name" class="block mb-2 text-start text-sm font-bold text-gray-900 dark:text-white">Artist</label>
-                        <input type="text" v-model="playlist.artist" name="name" id="name" :disabled="formSubmitted" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Drake">
+                        <input type="text" v-model="playlist.artist" name="name" id="name" :disabled="formSubmitted" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Type here">
                     </div>
                     <div>
                         <label for="title" class="block mb-2 text-start text-sm font-bold text-gray-900 dark:text-white">Song Title</label>
-                        <input type="text" v-model="playlist.title" name="title" :disabled="formSubmitted" id="title" placeholder="Started from the bottom" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <input type="text" v-model="playlist.title" name="title" :disabled="formSubmitted" id="title" placeholder="Type here" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                     </div>
                     <div>
 

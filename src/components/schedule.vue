@@ -48,8 +48,7 @@ Attire: Cocktail            </h2>
 </svg>
             <h2 class="mb-5 text-xl  lg:text-4xl font-extrabold tracking-tight text-black dark:text-black">
              
-NTHC Prestige Homes, Nmai Zorm-Adjigarno Road
-            </h2>
+              THE HUB FITNESS CENTRE, NMAI DZORM - ADJIGARNOR ROAD            </h2>
             <button @click="redirectToMap" type="submit" class="w-auto text-white bg-purple-900 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-bold rounded-lg text-lg px-5 py-2.5 text-center dark:bg-purple-900 dark:hover:bg-gray-700 dark:focus:ring-gray-800" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Get directions</button>
         </div>
   

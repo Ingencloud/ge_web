@@ -1,6 +1,6 @@
 <template>
   <section id="giftSection" class="relative isolate justify-center overflow-hidden px-6 py-24 sm:py-32 lg:py-8 lg:px-8 my-10 ">
-<div class="mx-auto max-w-screen-xl  p-4 bg-white border border-gray-200 rounded-lg shadow-lg sm:p-8 bg-gradient-to-r from-violet-500 to-fuchsia-500">
+<div class="mx-auto max-w-screen-xl  p-4 border border-gray-200 rounded-lg shadow-lg sm:p-8 bg-gray-900">
   <div class="text-center">
    
 <h5 class="mb-10 text-4xl font-extrabold tracking-tight leading-none text-white lg:text-6xl dark:text-white" style="font-family: 'Playfair Display SC', serif;" >
@@ -20,12 +20,33 @@
 
     </p>
     <div class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
-      <a href="https://wa.me/+233552567317" class="w-full sm:w-auto bg-green-800 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-green-700 dark:hover:bg-green-600 dark:focus:ring-green-700"  style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+      <!-- <a href="https://wa.me/+233552567317" class="w-full sm:w-auto bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-green-700 dark:hover:bg-green-600 dark:focus:ring-green-700"  style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
 </svg>
                 <div class="mb-1 text-xs"> Message couple</div>
-        </a>
+        </a> -->
+ 
+      <div @click="openModal()" class="w-full sm:w-auto bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-green-700 dark:hover:bg-green-600 dark:focus:ring-green-700"  style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+</svg>
+                <div class="mb-1 text-xs"> Send Gift</div>
+</div>
+    </div>
+
+    <div v-if="modalOpen"  @click="closeModal" class="modal fixed inset-0 z-10 w-screen overflow-y-auto">
+    <div class="mb-4">
+     <h5 class="text-xl text-white">Bank Name: </h5> <p class="text-lg text-white">Standard Chartered Bank </p> 
+     <h5 class="text-xl text-white">Bank Account Number:</h5><p class="text-lg text-white"> 0101042542300</p>
+     <h5 class="text-xl text-white">Account Holder Name:</h5><p class="text-lg text-white"> Gilbert Nii Tackie</p>
+      <h5 class="text-xl text-white">Branch:</h5><p class="text-lg text-white">West hills mall</p>
+    </div> <div>
+     <h5 class="text-xl text-white">Bank Name: </h5> <p class="text-lg text-white">Stanbic Bank </p> 
+     <h5 class="text-xl text-white">Bank Account Number:</h5><p class="text-lg text-white"> 9040007936391</p>
+     <h5 class="text-xl text-white">Account Holder Name:</h5><p class="text-lg text-white">  Edinam Ama Tettey</p>
+      <h5 class="text-xl text-white">Branch:</h5><p class="text-lg text-white">West hills mall</p>
+    </div>
     </div>
 </div>
 </section>
@@ -38,12 +59,36 @@
  export default {
     // eslint-disable-next-line vue/multi-word-component-names
     name: 'Gift',
+    methods: {
+    openModal() {
+      this.modalOpen = true;
+    },
+    closeModal() {
+      this.modalOpen = false;
+    },
+  },
  }
 </script>
 
 <style scoped>
 .bgColor {
   background-color: #d4d4d4 ;
+}
+.modal {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto; /* Set width to auto to fit the content */
+  height: auto; /* Set height to auto to fit the content */
+  max-width: 100%; /* Set max-width to limit modal width */
+  max-height: 100%; /* Set max-height to limit modal height to 80% of viewport height */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure modal is on top of everything */
+  overflow: auto; /* Enable scrolling for modal content if it overflows */
 }
 /* .backgroundImage {
   background-image: url("../assets/view.jpeg");

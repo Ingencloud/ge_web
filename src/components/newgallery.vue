@@ -114,8 +114,8 @@ Gallery</h2>
 }
 
 .modal-image {
-  max-width: 70%; /* Ensure image fits within the modal */
-  max-height: 70%; /* Ensure image fits within the modal */
+  max-width: 850%; /* Ensure image fits within the modal */
+  max-height: 850%; /* Ensure image fits within the modal */
   border-radius: 5px;
   display: block;
   margin: 0 auto;

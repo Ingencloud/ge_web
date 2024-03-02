@@ -35,7 +35,7 @@
 </div>
     </div>
 
-    <div v-if="modalOpen"  @click="closeModal" class="modal fixed inset-0 z-10 w-screen overflow-y-auto">
+    <div v-if="modalOpen"  @click="closeModal" class="modal fixed justify-center inset-0 z-10 w-screen overflow-y-auto">
     <div @click.stop>
      <h5 class="text-xl text-white">Bank Name: </h5> <p class="text-lg text-white">Standard Chartered Bank </p> 
      <h5 class="text-xl text-white">Bank Account Number:</h5><p class="text-lg text-white"> 0101042542300</p>
@@ -83,11 +83,11 @@
   display: flex;
   position: fixed;
   top: 50%;
-  left: 50%;
   width: 100%;
   height: 100%;
   justify-content: center;
   align-items: center; 
+  background-color: rgba(17, 24, 39, 0.5);
 }
 /* .backgroundImage {
   background-image: url("../assets/view.jpeg");

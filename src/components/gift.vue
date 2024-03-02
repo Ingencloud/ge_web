@@ -37,15 +37,15 @@
 
     <div v-if="modalOpen"  @click="closeModal" class="modal fixed justify-center inset-0 z-10 w-screen overflow-y-auto">
     <div @click.stop>
-     <h5 class="text-xl text-white">Bank Name: </h5> <p class="text-lg text-white">Standard Chartered Bank </p> 
-     <h5 class="text-xl text-white">Bank Account Number:</h5><p class="text-lg text-white"> 0101042542300</p>
-     <h5 class="text-xl text-white">Account Holder Name:</h5><p class="text-lg text-white"> Gilbert Nii Tackie</p>
-      <h5 class="text-xl text-white">Branch:</h5><p class="text-lg text-white">West hills mall</p>
+     <h5 class="text-lg text-white">Bank Name: </h5> <p class="text-lg text-white">Standard Chartered Bank </p> 
+     <h5 class="text-lg text-white">Bank Account Number:</h5><p class="text-lg text-white"> 0101042542300</p>
+     <h5 class="text-lg text-white">Account Holder Name:</h5><p class="text-lg text-white"> Gilbert Nii Tackie</p>
+      <h5 class="text-lg text-white">Branch:</h5><p class="text-lg text-white">West hills mall</p>
       <br>
-     <h5 class="text-xl text-white">Bank Name: </h5> <p class="text-lg text-white">Stanbic Bank </p> 
-     <h5 class="text-xl text-white">Bank Account Number:</h5><p class="text-lg text-white"> 9040007936391</p>
-     <h5 class="text-xl text-white">Account Holder Name:</h5><p class="text-lg text-white">  Edinam Ama Tettey</p>
-      <h5 class="text-xl text-white">Branch:</h5><p class="text-lg text-white">West hills mall</p>
+     <h5 class="text-lg text-white">Bank Name: </h5> <p class="text-lg text-white">Stanbic Bank </p> 
+     <h5 class="text-lg text-white">Bank Account Number:</h5><p class="text-lg text-white"> 9040007936391</p>
+     <h5 class="text-lg text-white">Account Holder Name:</h5><p class="text-lg text-white">  Edinam Ama Tettey</p>
+      <h5 class="text-lg text-white">Branch:</h5><p class="text-lg text-white">West hills mall</p>
     </div>
     </div>
 </div>
@@ -82,7 +82,6 @@
 .modal {
   display: flex;
   position: fixed;
-  top: 50%;
   width: 100%;
   height: 100%;
   justify-content: center;

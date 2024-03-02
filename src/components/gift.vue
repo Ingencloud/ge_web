@@ -36,7 +36,7 @@
     </div>
 
     <div v-if="modalOpen"  @click="closeModal" class="modal fixed inset-0 z-10 w-screen overflow-y-auto">
-    <div class="mb-4">
+    <div @click.stop>
      <h5 class="text-xl text-white">Bank Name: </h5> <p class="text-lg text-white">Standard Chartered Bank </p> 
      <h5 class="text-xl text-white">Bank Account Number:</h5><p class="text-lg text-white"> 0101042542300</p>
      <h5 class="text-xl text-white">Account Holder Name:</h5><p class="text-lg text-white"> Gilbert Nii Tackie</p>
@@ -82,18 +82,12 @@
 .modal {
   display: flex;
   position: fixed;
-  top: 0%;
-  left: 0%;
-  transform: translate(-50%, -50%);
-  width: auto; /* Set width to auto to fit the content */
-  height: auto; /* Set height to auto to fit the content */
-  max-width: 100%; /* Set max-width to limit modal width */
-  max-height: 100%; /* Set max-height to limit modal height to 80% of viewport height */
-  background-color: rgba(0, 0, 0, 1); /* Semi-transparent background */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   justify-content: center;
-  align-items: center;
-  z-index: 9999; /* Ensure modal is on top of everything */
-  overflow: auto; /* Enable scrolling for modal content if it overflows */
+  align-items: center; 
 }
 /* .backgroundImage {
   background-image: url("../assets/view.jpeg");

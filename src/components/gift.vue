@@ -86,7 +86,7 @@
   height: 100%;
   justify-content: center;
   align-items: center; 
-  background-color: rgba(17, 24, 39, 0.5);
+  background-color: rgba(17, 24, 39);
 }
 /* .backgroundImage {
   background-image: url("../assets/view.jpeg");

@@ -23,22 +23,24 @@ Our Story
               <img src="../assets/23.jpg" class="rounded-lg mt-4" alt="">
 
               <p class="mb-4 mt-4 text-lg lg:text-2xl font-medium  leading-8 text-left text-black" >
-                Being our first semester at Ashesi and taking several classes together, we were constantly in each other's space. In a hilarious twist of fate, Edi, 
-                with a hint of persuasion, talked me into completing more essay assignments for her. But we got closer, and soon our friend circles meshed, and Edi's room (Room 202) 
-                became the go-to place for a nap or a chill spot between classes.               </p>
+                Post this encounter we met several times because we were taking the same classes at Ashesi. In a hilarious twist of fate, Edi, with a hint of persuasion, talked me into completing more essay assignments for her.  These encounters meant we got closer and almost by fate our friend circles meshed.              </p>
                <img src="../assets/22.jpg" class="rounded-lg" alt="">
 
             </div>
           </div>
           <div class="relative isolate px-6 pt-2 lg:px-8 animate-fade-in-right" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
             <p class="mb-4 text-lg leading-8 lg:text-2xl font-medium  text-left text-black">
-              Ultimately, we started to have more conversations with each other than with the friend groups. Our chats shifted from campus gossip to personal quirks, and we realized we were total opposites; Edi was all about TV Shows and lounging while I was all about sports. But hold on, during our summer school escapades, we discovered common ground in our love for music and an unstoppable craving for milkshakes,
-               even though both of us were lactose intolerant.
+              Soon Edi's room (Room 202) became the go-to place for a nap or a chill spot between classes. We started to have more conversations with each other outside the friend group. Our chats shifted from campus gossip to personal quirks, and we realized we were total opposites; Edi was all about TV Shows and lounging while I was all about sports. 
                
 </p>                 <img src="../assets/11.jpg" class="rounded-lg"  alt="">
                  <p class="mt-6 text-lg lg:text-2xl font-medium  leading-8 text-left text-black">
-                  This summer marked the start of our journey till date, and the moments we have shared kept teaching us that embracing each other's quirks was the secret sauce for navigating life's rollercoaster together. To be fair, having survived doing a five-year-plus long-distance relationship (Weija to Sakumono, if you're measuring), we're excited that we are now just a hop, skip, and a jump away from our big day.
-                </p> 
+                  But during our summer school escapades, we discovered common ground in our love for music and an unstoppable craving for milkshakes, even though both of us were lactose intolerant. This summer marked the start of our journey till date, and the moments we have shared kept teaching us that embracing each other's quirks was the secret sauce for navigating life's rollercoaster together.             
+                    </p>
+                                  <img src="../assets/16.jpg" class="rounded-lg"  alt="">
+
+                    <p class="mt-6 text-lg lg:text-2xl font-medium  leading-8 text-left text-black">
+                    To be fair, having survived doing a five-year-plus long-distance relationship (Weija to Sakumono, if you're measuring), we're excited that we are now just a hop, skip, and a jump away from our big day. 
+                    </p>
                 <p class="mt-6 text-lg lg:text-2xl font-medium  leading-8 text-left text-black">
                   Get ready to join us in the celebration—we can't wait to make memories with you!                </p> 
               

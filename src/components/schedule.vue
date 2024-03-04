@@ -23,7 +23,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#6a1c91" class="w-10 h-10 lg:w-16 lg:h-16 mb-2 inline">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                       </svg>
-                       <h2 class="mb-5 text-xl  lg:text-4xl font-extrabold tracking-tight text-black dark:text-black">
+                       <h2 class="mb-5 text-xl  lg:text-2xl font-extrabold tracking-tight text-black dark:text-black">
                           <span class="font-extrabold">Time:</span> 14:30 GMT</h2>
                    
               </div>
@@ -32,7 +32,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#6a1c91" class="w-10 h-10 lg:w-16 lg:h-16 mb-2 inline">
   <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
 </svg>
-            <h2 class="mb-5 text-xl  lg:text-4xl font-extrabold tracking-tight text-black dark:text-black">
+            <h2 class="mb-5 text-xl  lg:text-2xl font-extrabold tracking-tight text-black dark:text-black">
           
 
 Attire: Cocktail            </h2>
@@ -46,7 +46,7 @@ Attire: Cocktail            </h2>
   <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
   <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
 </svg>
-            <h2 class="mb-5 text-xl  lg:text-4xl font-extrabold tracking-tight text-black dark:text-black">
+            <h2 class="mb-5 text-xl  lg:text-2xl font-extrabold tracking-tight text-black dark:text-black">
              
               THE HUB FITNESS CENTRE, NMAI DZORM - ADJIGARNOR ROAD            </h2>
             <button @click="redirectToMap" type="submit" class="w-auto text-white bg-purple-900 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-bold rounded-lg text-lg px-5 py-2.5 text-center dark:bg-purple-900 dark:hover:bg-gray-700 dark:focus:ring-gray-800" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Get directions</button>

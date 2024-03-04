@@ -31,21 +31,21 @@
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
 </svg>
-                <div class="mb-1 text-xs"> Send Gift</div>
+                <div class="block mb-2 text-md text-start font-bold text-gray-900 dark:text-white"> Send Gift</div>
 </div>
     </div>
 
     <div v-if="modalOpen"  @click="closeModal" class="modal fixed justify-center inset-0 z-10 w-screen overflow-y-auto">
     <div @click.stop>
-     <h5 class="text-lg text-white">Bank Name: Standard Chartered Bank </h5> 
-     <h5 class="text-lg text-white">Bank Account Number: 0101042542300</h5>
-     <h5 class="text-lg text-white">Account Holder Name: Gilbert Nii Tackie</h5>
-      <h5 class="text-lg text-white">Branch: West hills mall</h5>
+     <h5 class="text-lg text-white">Bank Name: <span class="font-extrabold"> Standard Chartered Bank</span> </h5> 
+     <h5 class="text-lg text-white">Bank Account Number: <span class="font-extrabold"> 0101042542300 </span></h5>
+     <h5 class="text-lg text-white">Account Holder Name: <span class="font-extrabold"> Gilbert Nii Tackie </span></h5>
+      <h5 class="text-lg text-white">Branch: <span class="font-extrabold"> West hills mall </span></h5>
       <br>
-     <h5 class="text-lg text-white">Bank Name: Stanbic Bank </h5> 
-     <h5 class="text-lg text-white">Bank Account Number: 9040007936391</h5>
-     <h5 class="text-lg text-white">Account Holder Name: Edinam Ama Tettey</h5>
-      <h5 class="text-lg text-white">Branch: West hills mall</h5>
+     <h5 class="text-lg text-white">Bank Name: <span class="font-extrabold"> Stanbic Bank </span> </h5> 
+     <h5 class="text-lg text-white">Bank Account Number: <span class="font-extrabold"> 9040007936391</span></h5>
+     <h5 class="text-lg text-white">Account Holder Name: <span class="font-extrabold"> Edinam Ama Tettey</span></h5>
+      <h5 class="text-lg text-white">Branch: <span class="font-extrabold"> West hills mall</span></h5>
     </div>
     </div>
 </div>
@@ -82,6 +82,7 @@
 .modal {
   display: flex;
   position: fixed;
+  top: 10%;
   width: 100%;
   height: 100%;
   justify-content: center;

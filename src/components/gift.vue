@@ -37,15 +37,15 @@
 
     <div v-if="modalOpen"  @click="closeModal" class="modal fixed justify-center inset-0 z-10 w-screen overflow-y-auto">
     <div @click.stop>
-     <h5 class="text-lg text-white">Bank Name: </h5> <p class="text-lg text-white">Standard Chartered Bank </p> 
-     <h5 class="text-lg text-white">Bank Account Number:</h5><p class="text-lg text-white"> 0101042542300</p>
-     <h5 class="text-lg text-white">Account Holder Name:</h5><p class="text-lg text-white"> Gilbert Nii Tackie</p>
-      <h5 class="text-lg text-white">Branch:</h5><p class="text-lg text-white">West hills mall</p>
+     <h5 class="text-lg text-white">Bank Name: Standard Chartered Bank </h5> 
+     <h5 class="text-lg text-white">Bank Account Number: 0101042542300</h5>
+     <h5 class="text-lg text-white">Account Holder Name: Gilbert Nii Tackie</h5>
+      <h5 class="text-lg text-white">Branch: West hills mall</h5>
       <br>
-     <h5 class="text-lg text-white">Bank Name: </h5> <p class="text-lg text-white">Stanbic Bank </p> 
-     <h5 class="text-lg text-white">Bank Account Number:</h5><p class="text-lg text-white"> 9040007936391</p>
-     <h5 class="text-lg text-white">Account Holder Name:</h5><p class="text-lg text-white">  Edinam Ama Tettey</p>
-      <h5 class="text-lg text-white">Branch:</h5><p class="text-lg text-white">West hills mall</p>
+     <h5 class="text-lg text-white">Bank Name: Stanbic Bank </h5> 
+     <h5 class="text-lg text-white">Bank Account Number: 9040007936391</h5>
+     <h5 class="text-lg text-white">Account Holder Name: Edinam Ama Tettey</h5>
+      <h5 class="text-lg text-white">Branch: West hills mall</h5>
     </div>
     </div>
 </div>

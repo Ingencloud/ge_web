@@ -24,7 +24,7 @@
                   <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                       </svg>
                        <h2 class="mb-5 text-xl  lg:text-2xl font-extrabold tracking-tight text-black dark:text-black">
-                          <span class="font-extrabold">Time:</span> 14:30 GMT</h2>
+                          <span class="font-extrabold">Time:</span> 15:00 GMT</h2>
                    
               </div>
               

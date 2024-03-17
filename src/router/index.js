@@ -3,6 +3,8 @@ import Home from '../views/Home.vue'
 import intro from "../views/intro.vue";
 import Register from "../views/Register.vue";
 import Login from "../views/Login.vue"
+import Decline from "../views/decline.vue"
+
 import Code from "../views/code.vue"
 import OurStory from '../components/ourstory.vue';
 import Schedule from '../components/schedule.vue';
@@ -32,6 +34,12 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: Login,
+    
+  },
+  {
+    path: '/decline',
+    name: 'Decline',
+    component: Decline,
     
   },
   {
